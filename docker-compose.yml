@@ -4,19 +4,15 @@ services:
     image: viswanathkasi/moves:latest
     ports:
       - "8081:80"
-    replicas: 3
   train:
     image: viswanathkasi/train:latest
     ports:
       - "8082:80"
-    replicas: 3
   dth:
     image: viswanathkasi/dth:latest
     ports:
       - "8083:80"
-    replicas: 3
   recharge:
     image: viswanathkasi/recharge:latest
     ports:
       - "8084:80"
-    replicas: 3
