@@ -3,24 +3,24 @@ services:
   movies:
     image: viswanathkasi/movies:latest
     ports:
-      - "8081:80"
+      - "81:80"
     deploy:
       replicas: 3
   train:
     image: viswanathkasi/train:latest
     ports:
-      - "8082:80"
+      - "82:80"
     deploy:
       replicas: 3
   dth:
     image: viswanathkasi/dth:latest
     ports:
-      - "8083:80"
+      - "83:80"
     deploy:
       replicas: 3
   recharge:
     image: viswanathkasi/recharge:latest
     ports:
-      - "8084:80"
+      - "84:80"
     deploy:
       replicas: 3
